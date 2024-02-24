@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="signin.css">
+    <title>Sign In Chatbot</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center" style="height: 100vh">
+            <div class="d-flex justify-content-center align-items-center rounded rounded-4 container-div">
+                <div class="col-7 p-2 m-2">
+                    <img src="Assets/bg-rubics.jpeg" alt="Background Image"
+                        class="bg-image img-fluid rounded rounded-4">
+                </div>
+                <div class="col-5 p-2 m-2 ps-0 ms-0">
+                    <form id="signinform">
+                        <div>
+                            <p class="m-0 p-0 align-self-center display-6 fw-semibold">Sign In</p>
+                        </div>
+                        <hr>
+                        <div class="mb-2">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email-signin" placeholder="Enter your email"
+                                name="email" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd-signin"
+                                placeholder="Enter your password" name="pswd" required>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mb-3">
+                            <p class="m-0 p-0 me-1">Dont have an account?</p>
+                            <a class="m-0 p-0 text-decoration-none text-white fw-semibold" href="/signup.html">Create a
+                                new account</a>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <button type="submit" id="formbtn" class="btn btn-primary rounded rounded-5"
+                                style="width: 30%;" onclick="customSignInSubmitFunc()">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

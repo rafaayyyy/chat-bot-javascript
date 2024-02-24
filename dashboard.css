@@ -1,0 +1,138 @@
+:root {
+  --color-intensity-1: #02315e;
+  --color-intensity-2: #00457e;
+  --color-intensity-3: #2f70af;
+  --ruddy-blue: #73a5e1ff;
+  --dark-cyan: #08948bff;
+  --rich-black: #05101eff;
+  --bone: #dcd2c3ff;
+  --persian-orange: #d08e6dff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.welcome-nav {
+  background-color: var(--dark-cyan);
+  color: var(--rich-black);
+}
+
+.profile-pic-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.dashboard-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.users-left-section {
+  border-right: 2px solid var(--color-intensity-1);
+}
+
+.search-bar:focus-within {
+  border: var(--rich-black);
+  outline: none;
+}
+.search-icon {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-control {
+  border-width: 3px;
+}
+.form-control:focus {
+  border: 3px solid var(--rich-black) !important;
+  border: none;
+  box-shadow: none !important;
+  /* background-color: var(--bone);
+  background-color: #2aa4af; */
+  color: black;
+  font-weight: 600;
+}
+/* input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: var(--ruddy-blue);
+  background-color: #00707a;
+  color: var(--bone);
+} */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.users-pic-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: x-large;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.users-list {
+  overflow-y: scroll !important;
+  height: calc(100vh - 170px);
+}
+
+#message-textbox {
+  width: 100%;
+  resize: none;
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.msg-container-div {
+  padding: 2px;
+  margin-bottom: 3px;
+}
+
+.user-li-item:hover {
+  cursor: pointer;
+  background-color: #00457e;
+}
+
+.opened-chat {
+  background-color: yellow;
+}
+
+/* ========================== */
+.msg-container-div {
+  position: relative;
+}
+
+.hidden-delete-buttons {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.msg-container-div:hover > .hidden-delete-buttons {
+  display: block !important;
+}
